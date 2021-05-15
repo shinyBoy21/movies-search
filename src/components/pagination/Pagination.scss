@@ -1,15 +1,12 @@
 .pagination {
-    //flex-wrap: wrap;
     max-width: 100%;
     list-style: none;
     display: flex;
-    //flex-direction: row;
     justify-content: space-around; 
     &>li {
         display: block;
        text-align: center;
        padding: 10px;
-       //background-color: blue;
        flex-wrap: wrap;
        max-width: 700px;
        overflow-x: hidden;
@@ -18,7 +15,6 @@
         color: black;
         cursor: pointer;
         text-decoration: none;
-        //background-color: blue;
        }
     }
 }

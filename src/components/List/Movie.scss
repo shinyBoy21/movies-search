@@ -1,7 +1,5 @@
 .movie {
-    //display: flex;
     width: 150px;
-   // height: 450px;
     margin: 2.5rem;
     position: relative;
     border: 1px solid lightgray;
@@ -9,14 +7,10 @@
     left: 3%;
     top: 15%;
     transform: translate(0,0);
-    //top: 5O%;
-    //overflow: hidden;
-    //height: 500px;
     &:hover .movie-overview {
         transform: translateY(0%);
         display: block;
         transition: transform 0.3s ease-in-out;
-        //transition: transform 0.9s ease-in-out;
     }
     & img {
         max-width: 100%;
@@ -27,7 +21,6 @@
         align-items: center;
         justify-content: space-between;
         padding: 1rem ;
-        //flex-direction: column;
         & h3{
             margin: 0; 
             font-size: 0.9rem;  
@@ -43,11 +36,9 @@
         padding: 1rem;
         overflow:auto;
         max-height: 60%;
-        //opacity: 0.9;
        display:none;
        border-bottom-left-radius: 5px;
        border-bottom-left-radius: 5px;
-      // scroll-snap-align: ;
 
     }
 }

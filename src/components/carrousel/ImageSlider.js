@@ -1,5 +1,4 @@
 import React, {useEffect,useState} from 'react';
-//import { SliderData } from './SliderData';
 import './ImageSlider.scss';
 
 const API_FEAT=`https://api.themoviedb.org/3/movie/now_playing?api_key=552211b10d801ec9f88058536e25d2c3&language=en-US&page=1`;
@@ -14,9 +13,6 @@ const ImageSlider = () => {
     const[movies,setMovies]=useState([]);
     const [current,setCurrent]=useState(0);
     const length=movies.length;
-
-   
-
   
     const getMovies=(API)=>{
       fetch(API)
@@ -30,7 +26,6 @@ const ImageSlider = () => {
        getMovies(Api);
      },[]);
 
-    //const Data=movies.map((movie,key)=>IMG+movie.poster_path,movie.title);
     const nextSlider=()=> {
         setCurrent(current===length-1?0:current+1)
     };

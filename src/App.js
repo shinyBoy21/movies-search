@@ -5,9 +5,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import MoviesPage from './components/moviesPage/MoviesPage';
 import Footer from './components/footer/footer';
 import Home from './home/Home';
-import Series from './series/Series';
-//import MoviesPage from './components/moviesPage/MoviesPage';
-
+import SeriesPage from './components/seriesPage/Series';
 
 function App() {
     return (
@@ -16,7 +14,7 @@ function App() {
             <div className='app-menu'><Menu/></div>
             <Route path="/" exact component={Home}></Route>
             <Route path="/movies" component={MoviesPage}></Route>
-            <Route path="/series"></Route>
+            <Route path="/series" component={SeriesPage}></Route>
             <div className='app-footer'><Footer/></div>
         </div>
         </Router>

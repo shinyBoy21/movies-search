@@ -1,6 +1,4 @@
 import React from 'react';
-//import './header.css';
-//import InputField from './Input'
 import './Input.scss';
 
 const InputField =({type, onChange,onSubmit, value,id})=> {

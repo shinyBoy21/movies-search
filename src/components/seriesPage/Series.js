@@ -1,6 +1,7 @@
+
 import React, {useEffect,useState,useRef,useReducer} from 'react';
 import ReactPaginate from 'react-paginate';
-import './MoviesPage.scss';
+import './Series.scss';
 import Movie from '../List/Movie';
 import Pagination from '../pagination/Pagination';
 import InputField from '../search/Input';
@@ -11,10 +12,10 @@ import Loader from '../loader/Loader';
 
 
 const SEARCH_API='https://api.themoviedb.org/3/search/movie?&api_key=552211b10d801ec9f88058536e25d2c3&query=';
-const FEATURED_API='https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=552211b10d801ec9f88058536e25d2c3&page=1';
+const SERIES_API='https://api.themoviedb.org/3/tv/popular?api_key=552211b10d801ec9f88058536e25d2c3&language=en-US&page=1'
 
 
-function MoviesPage() {
+function SeriesPage() {
 
   const[movies,setMovies]=useState([]);
   const [searchItem,setSearchItem]= useState('');
@@ -40,7 +41,7 @@ function MoviesPage() {
   }
 
   useEffect(()=>{
-    getMovies(FEATURED_API);
+    getMovies(SERIES_API);
   },[]);
 
   const handleOnSubmit=(e)=> {
@@ -84,7 +85,7 @@ function MoviesPage() {
     <InputField id='input' type='text' onChange={handleChange} onSubmit={handleOnSubmit} value={searchItem}/>
     </div>
 
-    <div className='carrousel'><span className='category'>Now Playing</span><ImageSlider/></div>
+    {/* <div className='carrousel'><span className='category'>Now Playing</span><ImageSlider/></div> */}
     <span className='category'>Popular</span>
   
     <div className='movies'>
@@ -117,4 +118,4 @@ function MoviesPage() {
   );
 }
 
-export default MoviesPage;
+export default SeriesPage;
