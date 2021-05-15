@@ -1,0 +1,50 @@
+@mixin dash($array,$offset,$width) {
+    stroke-dasharray: $array;
+    stroke-dashoffset: $offset;
+    stroke-width: $width;
+}
+.btn {
+    cursor: pointer !important;
+    padding-top: 10px !important;
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    //right: 2%;
+    &:hover 
+        &-link-svg-rect {
+            @include dash(760,0 ,2px )
+        }
+    
+    &-link {
+        text-decoration: none;
+        &-svg {
+            height: 60px;
+            width: 300px;
+           // border: 1px solid black;
+            //background-color: black;
+            &-rect {
+                height: 60px;
+                width: 300px;  
+                //  border: 1px solid black;
+                fill: transparent;
+                stroke: #1B4965;
+                border-bottom: 5px solid #1B4965;
+
+                transition: stroke-width 1s,stroke-dashoffset 1s, stroke-dasharray 1s;
+                @include dash(140 540,-474,8px )
+
+            }
+        }
+        &-text{
+            position: relative;
+            text-align: right;
+            //left:10px;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: 8px;
+            color: #1B4965;
+            top:-48px;
+            //text-decoration: none;
+        }
+    }
+}

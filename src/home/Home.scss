@@ -1,0 +1,84 @@
+@media only screen and (min-width: 760px){
+    .home {
+        max-height: 640px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 640px;
+            width: 40%;
+           &-welcome {
+            position: relative;
+            left:40%;
+            top: 5%;
+            height: 300px;
+            width: 100%;
+            &-hello {
+                font-size: 3rem;
+            }
+            &-search {
+                font-size: 1rem;
+            }
+           }
+           &-button {
+            position:relative;
+            left: 3%;
+            height: 340px;
+            width: 100%;
+           }
+        } 
+        &-right {
+            height: 640px;
+            width: 60%;
+            background-image: url('./wp9030533-angry-groot-wallpapers-removebg-preview.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom;
+        }
+    }
+}
+     
+@media only screen and (max-width: 760px){
+    .home {
+        height: 640px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 240px;
+            width: 100%;
+           &-welcome {
+            height: 140px;
+            width: 100%;
+            padding-left: 10px;
+            &-hello {
+                font-size: 2rem;
+            }
+            &-search {
+                font-size: 1rem;
+            }
+           }
+           &-button {
+            height: 100px;
+            width: 100%;
+           }
+        } 
+        &-right {
+            height: 400px;
+            width: 100%;
+            background-image: url('./wp9030533-angry-groot-wallpapers-removebg-preview.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom;
+        }
+    }
+    
+}

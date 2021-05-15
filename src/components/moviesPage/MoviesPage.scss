@@ -1,0 +1,42 @@
+.search {
+  margin-top: 2%;
+  height: 50px;
+  width: 30%;
+  position: relative;
+  left: 10%;
+}
+.carrousel {
+  height: 400px;
+  width: 100%;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.pages {
+  display: flex;
+  flex-direction: row;
+  max-height: 100px;
+  width: 100%;
+}
+
+.category {
+  padding-left: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
+.error {
+  display: block;
+  position: relative;
+  bottom: 100%;
+  left: 100%;
+}
+
+  

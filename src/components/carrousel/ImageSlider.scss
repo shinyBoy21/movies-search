@@ -1,0 +1,109 @@
+@media only screen and (min-width: 767px){
+.slider {
+    position: relative;
+    top: 15%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    &-img {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 60%;
+        height: 280px;
+        border-radius: 10px;
+        bottom: 5%;
+    }
+    &-right-arrow {
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        font-size: 1.5rem;
+        color:gray;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+    }
+    &-left-arrow {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        font-size: 1.5rem;
+        color:gray;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+h3{
+    text-align: center;
+    color: gray;
+    position: relative;
+    bottom: 30px;
+}
+
+}
+
+@media only screen and (max-width: 767px){
+    .slider {
+        position: relative;
+        top: 15%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        &-img {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0);
+            width: 60%;
+            height: 250px;
+            border-radius: 10px;
+            
+        }
+        &-right-arrow {
+            position: absolute;
+            top: 25%;
+            right: 10%;
+            font-size: 1.5rem;
+            color:gray;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+        }
+        &-left-arrow {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            font-size: 1.5rem;
+            color:gray;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+    
+    .slide {
+        opacity: 0;
+        transition-duration: 1s ease;
+    }
+    .slide.active {
+        opacity: 1;
+        transition-duration: 1s;
+        transform: scale(1.08);
+    }
+    h3{
+        text-align: center;
+    }
+    
+    }

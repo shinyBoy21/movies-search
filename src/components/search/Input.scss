@@ -1,0 +1,21 @@
+.input {
+    height: 30px;
+    width: 250px;
+    color: lightgray;
+    border :1px solid gray;
+    border-radius: 10px;
+    padding-left: 5px;
+    &-label {
+        color: gray;
+    }
+    &-field {
+        border: none;
+        outline: none;
+        height: 28px;
+        width:229px;
+        opacity: 0.7;
+        color: black;
+        border: none;
+        border-radius: 10px;
+    }
+}
