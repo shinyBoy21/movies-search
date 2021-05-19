@@ -13,7 +13,7 @@ const MovieInfo=({image,title,viewMovieInfo,movieId})=>{
                     <img src={IMG_API+image} alt={title}/>}
                 
                 <div className='movie-info'>
-                     <a href='#' onClick={()=>viewMovieInfo(movieId)}>View details</a>
+                     <button onClick={()=>viewMovieInfo(movieId)}>View details</button>
                 </div>
                  
              </div>

@@ -1,10 +1,6 @@
 import React from 'react';
 import './MovieDetail.scss';
 
-
-const IMG_API='https://image.tmdb.org/t/p/w1280';
-
-
 function MovieDetail({closeMovieInfo,currentMovie}) {
     return (
         <div className='container'>

@@ -15,7 +15,7 @@ function App() {
             <Route path="/" exact component={Home}></Route>
             <Route path="/movies" component={MoviesPage}></Route>
             <Route path="/series" component={SeriesPage}></Route>
-            <div className='app-footer'><Footer/></div>
+            <div id='contacts' className='app-footer'><Footer/></div>
         </div>
         </Router>
     )

@@ -1,7 +1,5 @@
 import React from 'react';
 import Btn from '../components/get started btn/BTN';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import MoviesPage from '../components/moviesPage/MoviesPage';
 import './Home.scss';
 
 

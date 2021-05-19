@@ -1,13 +1,10 @@
 
-import React, {useEffect,useState,useRef,useReducer} from 'react';
-import ReactPaginate from 'react-paginate';
+import React, {useEffect,useState} from 'react';
 import './Series.scss';
 import Movie from '../List/Movie';
 import Pagination from '../pagination/Pagination';
 import InputField from '../search/Input';
-import MovieInfo from '../movieInfoComponent/MovieInfo';
 import MovieDetail from '../movieDetail/MovieDetail';
-import ImageSlider from '../carrousel/ImageSlider';
 import Loader from '../loader/Loader';
 
 
@@ -64,8 +61,7 @@ function SeriesPage() {
   };
 
   const viewMovieInfo=(id)=>{
-     const filteredMovie=movies.filter(movie=>movie.id==id);
-     const newCurrentMovie=filteredMovie.length>0?filteredMovie[0]:null;
+     const filteredMovie=movies.filter(movie=>movie.id===id);
      setCurrentMovie(filteredMovie);
    };
   const closeMovieInfo =()=> {
@@ -85,7 +81,6 @@ function SeriesPage() {
     <InputField id='input' type='text' onChange={handleChange} onSubmit={handleOnSubmit} value={searchItem}/>
     </div>
 
-    {/* <div className='carrousel'><span className='category'>Now Playing</span><ImageSlider/></div> */}
     <span className='category'>Popular</span>
   
     <div className='movies'>

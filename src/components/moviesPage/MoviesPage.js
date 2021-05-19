@@ -1,10 +1,9 @@
-import React, {useEffect,useState,useRef,useReducer} from 'react';
-import ReactPaginate from 'react-paginate';
+import React, {useEffect,useState} from 'react';
 import './MoviesPage.scss';
 import Movie from '../List/Movie';
 import Pagination from '../pagination/Pagination';
 import InputField from '../search/Input';
-import MovieInfo from '../movieInfoComponent/MovieInfo';
+//import MovieInfo from '../movieInfoComponent/MovieInfo';
 import MovieDetail from '../movieDetail/MovieDetail';
 import ImageSlider from '../carrousel/ImageSlider';
 import Loader from '../loader/Loader';
@@ -63,15 +62,13 @@ function MoviesPage() {
   };
 
   const viewMovieInfo=(id)=>{
-     const filteredMovie=movies.filter(movie=>movie.id==id);
-     const newCurrentMovie=filteredMovie.length>0?filteredMovie[0]:null;
+     const filteredMovie=movies.filter(movie=>movie.id===id);
      setCurrentMovie(filteredMovie);
    };
   const closeMovieInfo =()=> {
      setCurrentMovie(null)
    };
    
-
   const numberPages=Math.floor(total_results/20);
 
   return (

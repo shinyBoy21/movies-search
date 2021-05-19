@@ -30,15 +30,15 @@
             text-align: center !important; 
             color: #1D3557;
         }
-        &>a {
-            display: block;
+        &>button {
+            border: none;
+            outline: none;
             text-decoration: none;
             color:#1D3557;
             text-align: right !important;
             width: 110px;
             height: 25px;
             text-align: center !important;
-            padding-top: 10px;
             background-color: lightgray;
             cursor: pointer !important;
             border-radius: 5px;

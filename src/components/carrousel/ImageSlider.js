@@ -1,13 +1,8 @@
 import React, {useEffect,useState} from 'react';
 import './ImageSlider.scss';
 
-const API_FEAT=`https://api.themoviedb.org/3/movie/now_playing?api_key=552211b10d801ec9f88058536e25d2c3&language=en-US&page=1`;
 const IMG='https://image.tmdb.org/t/p/w1280';
 const Api=`https://api.themoviedb.org/3/movie/upcoming?api_key=552211b10d801ec9f88058536e25d2c3&language=en-US&page=1`
-
-const leftArr='<i class="fas fa-arrow-circle-left"></i>';
-const rightArr='<i class="fas fa-arrow-circle-right"></i>';
-
 
 const ImageSlider = () => {
     const[movies,setMovies]=useState([]);
